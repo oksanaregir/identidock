@@ -3,7 +3,7 @@ services:
     build: .
     expose:
       - "9090"
-    enviroment:
+    environment:
       - ENV=PROD
     links:
       - dnmonster
