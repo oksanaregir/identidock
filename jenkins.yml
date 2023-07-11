@@ -2,7 +2,7 @@ services:
   identidock:
     build: .
     expose:
-      -"9090"
+      - "9090"
     enviroment:
       ENV: PROD
     links:
