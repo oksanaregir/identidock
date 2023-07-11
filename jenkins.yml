@@ -4,7 +4,7 @@ services:
     expose:
       - "9090"
     enviroment:
-      ENV: PROD
+      - ENV=PROD
     links:
       - dnmonster
       - redis
