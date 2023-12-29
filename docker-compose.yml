@@ -1,0 +1,17 @@
+services:
+  identidock:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      ENV: DEV
+    volumes:
+      - ./app:/app
+    links:
+      - dnmonster
+
+  dnmonster:
+    image: amouat/dnmonster
+
+  redis:
+    image: redis:7.2.3
